@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_circle"
+        android:layout_width="269dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_circle" />
+
+    <ImageView
+        android:id="@+id/img_star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_star"
+        app:srcCompat="@drawable/main_startitem" />
+
+    <ImageView
+        android:id="@+id/img_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_startitem" />
+
+    <ImageView
+        android:id="@+id/img_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_targetitem" />
+
+    <ImageView
+        android:id="@+id/img_target1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_target"
+        app:srcCompat="@drawable/main_targetitem" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circle"
+        app:srcCompat="@drawable/main_path" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circle"
+        app:srcCompat="@drawable/main_path" />
+
+    <TextView
+        android:id="@+id/tv_Current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/regular"
+        android:text="Current"
+        android:textColor="@color/colorOrange"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/regular"
+        android:text="Start"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_main_tgWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/regular"
+        android:letterSpacing="0.1"
+        android:text="50 kg"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tv_main_starWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/regular"
+        android:letterSpacing="0.1"
+        android:text="55 kg"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/tv_main_tgD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/regular"
+        android:text="03/12/2021"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_target1" />
+
+    <TextView
+        android:id="@+id/tv_main_starD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="03/11/2021"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_star1" />
+
+    <TextView
+        android:id="@+id/tv_main_startBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:fontFamily="@font/regular"
+        android:letterSpacing="0.1"
+        android:text="BMI 20.7"
+        android:textColor="@color/colorOrange"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_starWeight" />
+
+    <TextView
+        android:id="@+id/tv_main_tgBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:fontFamily="@font/regular"
+        android:letterSpacing="0.1"
+        android:text="BMI 18.8"
+        android:textColor="@color/colorOrange"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main_tgWeight" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/regular"
+        android:text="Target"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_currentWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/bold"
+        android:text="55"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_circle"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/img_circle"
+        app:layout_constraintTop_toTopOf="@+id/img_circle" />
+
+    <TextView
+        android:id="@+id/tv_currentWeight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="kg"
+        android:textColor="@color/colorOrange"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_circle"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/img_circle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentWeight" />
+
+    <TextView
+        android:id="@+id/tv_currentBMI2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="BMI"
+        android:textColor="@color/colorOrange"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_circle"
+        app:layout_constraintStart_toStartOf="@+id/img_circle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentBMI" />
+
+    <TextView
+        android:id="@+id/tv_currentBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/bold"
+        android:text="20.7"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/img_circle"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/img_circle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currentWeight" />
+
+
+
+    <TextView
+        android:id="@+id/tv_Main_StateGetWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="Weight Loss"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currenBMITest" />
+
+    <TextView
+        android:id="@+id/tv_Main_GetWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bold"
+        android:text="0 kg"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <TextView
+        android:id="@+id/tv_Main_Process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/bold"
+        android:text="0 %"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/tv_Main_StateProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/regular"
+        android:text="Process"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_currenBMITest" />
+
+    <TextView
+        android:id="@+id/tv_currenBMITest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bold"
+        android:letterSpacing="0.2"
+        android:text="Normal weight"
+        android:textColor="@color/colorOrange"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circle" />
+
+    <Button
+        android:id="@+id/btn_main_AddW"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/button"
+        android:text="Add weight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_circle" />
+
+    <ImageView
+        android:id="@+id/img_main_BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_AddW"
+        app:srcCompat="@drawable/main_btn_bmi" />
+
+    <ImageView
+        android:id="@+id/img_main_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_AddW"
+        app:srcCompat="@drawable/main_btn_user" />
+
+    <TextClock
+        android:id="@+id/textclock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:format24Hour="d-M-yyyy"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_circle"
+        app:layout_constraintEnd_toEndOf="@+id/img_circle"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/img_circle" />
+
+    <ImageView
+        android:id="@+id/img_main_calo"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_main_User"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toEndOf="@+id/img_main_BMI"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main_AddW"
+        app:srcCompat="@drawable/calories_icon" />
+
+    <TextView
+        android:id="@+id/tv_calo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:fontFamily="@font/bold"
+        android:text="Calories"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/img_main_BMI"
+        app:layout_constraintTop_toBottomOf="@+id/img_main_calo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bmiresult_bg"
+    tools:context=".TargetWeight_Activity">
+
+    <ImageView
+        android:id="@+id/img_logoTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_apple" />
+
+    <TextView
+        android:id="@+id/tv_main_tgWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bold"
+        android:text="Target Weight"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_logoTW" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/weightarget_wtable" />
+
+    <EditText
+        android:id="@+id/txt_targetWeight"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/colorDarkBLue"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="Target Weight"
+        android:inputType="number|textPersonName"
+        android:letterSpacing="0.2"
+        android:minHeight="48dp"
+        android:textColor="@color/colorDarkBLue"
+        android:textColorHint="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txt_targetDate"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorDarkBLue"
+        android:ems="10"
+        android:letterSpacing="0.2"
+        android:fontFamily="@font/regular"
+        android:hint="Target Date"
+        android:inputType="date"
+        android:textColor="@color/colorDarkBLue"
+        android:textColorHint="@color/colorDarkBLue"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/txt_targetWeight" />
+
+    <Button
+        android:id="@+id/btn_getStarted"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="252dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/colorOrange"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/regular"
+        android:text="kg"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_targetWeight"
+        app:layout_constraintTop_toTopOf="@+id/txt_targetWeight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sl_bg">
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="488dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/colorOrange"
+        android:fontFamily="@font/regular"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form_signup" />
+
+    <EditText
+        android:id="@+id/et_phoneNumber_signup"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="106dp"
+        android:backgroundTint="@color/colorDarkBLue"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/colorDarkBLue"
+        android:hint="Phone Number"
+        android:textColor="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_confirmpass"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="@color/colorDarkBLue"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="Confirm Password"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/colorDarkBLue"
+        android:textColorHint="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNumber_signup" />
+
+    <EditText
+        android:id="@+id/et_password_signup"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="101dp"
+        android:backgroundTint="@color/colorDarkBLue"
+        android:ems="10"
+        android:fontFamily="@font/regular"
+        android:hint="Password"
+        android:inputType="textPersonName|textPassword"
+        android:textColor="@color/colorDarkBLue"
+        android:textColorHint="@color/colorDarkBLue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phoneNumber_signup" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="219dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="@font/regular"
+        android:text="Sign up"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="183dp"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="@font/regular"
+        android:text="Log in"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_main_Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
